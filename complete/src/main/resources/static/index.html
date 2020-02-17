@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lets Chat</title>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body  onload="init()">
+<div id="main-content" >
+<label id="userName"></label>
+    <div class="row">
+        <div >
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="name">your message</label>
+                    <input type="text" id="name" class="form-control" placeholder="type...">
+                </div>
+                <button id="send" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div >
+            <table id="conversation">
+                <thead>
+                <tr>
+                    <th>Chat Area</th>
+                </tr>
+                </thead>
+                <tbody id="greetings">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
